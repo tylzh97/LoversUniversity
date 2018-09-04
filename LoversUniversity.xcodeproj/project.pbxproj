@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF2E1AD3213E539B00870EC7 /* LZHTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2E1AD2213E539B00870EC7 /* LZHTabBarController.m */; };
 		CF8B6370213E4A1C009B1459 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8B636F213E4A1C009B1459 /* AppDelegate.m */; };
 		CF8B6373213E4A1C009B1459 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8B6372213E4A1C009B1459 /* ViewController.m */; };
 		CF8B6376213E4A1C009B1459 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF8B6374213E4A1C009B1459 /* Main.storyboard */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF2E1AD1213E539B00870EC7 /* LZHTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZHTabBarController.h; sourceTree = "<group>"; };
+		CF2E1AD2213E539B00870EC7 /* LZHTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZHTabBarController.m; sourceTree = "<group>"; };
 		CF8B636B213E4A1B009B1459 /* LoversUniversity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoversUniversity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF8B636E213E4A1B009B1459 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CF8B636F213E4A1C009B1459 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		CF8B638E213E4A1E009B1459 /* LoversUniversityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoversUniversityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF8B6392213E4A1E009B1459 /* LoversUniversityUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoversUniversityUITests.m; sourceTree = "<group>"; };
 		CF8B6394213E4A1F009B1459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFDB2692213EA7E400F74B5E /* LZHMarco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZHMarco.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +82,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF2E1ACF213E531400870EC7 /* MyPackage */ = {
+			isa = PBXGroup;
+			children = (
+				CF2E1AD0213E532200870EC7 /* LZHTabbarController */,
+			);
+			path = MyPackage;
+			sourceTree = "<group>";
+		};
+		CF2E1AD0213E532200870EC7 /* LZHTabbarController */ = {
+			isa = PBXGroup;
+			children = (
+				CF2E1AD1213E539B00870EC7 /* LZHTabBarController.h */,
+				CF2E1AD2213E539B00870EC7 /* LZHTabBarController.m */,
+			);
+			path = LZHTabbarController;
+			sourceTree = "<group>";
+		};
 		CF8B6362213E4A1B009B1459 = {
 			isa = PBXGroup;
 			children = (
+				CFDB2692213EA7E400F74B5E /* LZHMarco.h */,
+				CFDB268C213E9B6300F74B5E /* MyView */,
+				CF2E1ACF213E531400870EC7 /* MyPackage */,
 				CF8B636D213E4A1B009B1459 /* LoversUniversity */,
 				CF8B6386213E4A1E009B1459 /* LoversUniversityTests */,
 				CF8B6391213E4A1E009B1459 /* LoversUniversityUITests */,
@@ -130,6 +154,13 @@
 				CF8B6394213E4A1F009B1459 /* Info.plist */,
 			);
 			path = LoversUniversityUITests;
+			sourceTree = "<group>";
+		};
+		CFDB268C213E9B6300F74B5E /* MyView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +295,7 @@
 			files = (
 				CF8B6373213E4A1C009B1459 /* ViewController.m in Sources */,
 				CF8B637E213E4A1E009B1459 /* main.m in Sources */,
+				CF2E1AD3213E539B00870EC7 /* LZHTabBarController.m in Sources */,
 				CF8B6370213E4A1C009B1459 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +468,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F7M5UWR5A9;
 				INFOPLIST_FILE = LoversUniversity/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,6 +486,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F7M5UWR5A9;
 				INFOPLIST_FILE = LoversUniversity/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

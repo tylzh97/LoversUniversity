@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "LZHTabBarController.h"
+#import "LZHMarco.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //self.mainNavigationController = [[UINavigationController alloc] initWithRootViewController:[UIViewController alloc]];
+    
+    //self.window.rootViewController = self.mainNavigationController;
+    
+    self.window.rootViewController = [[LZHTabBarController alloc] init];
+    
+    //设置底部导航栏字体颜色 33 185 244
+    [[UITabBar appearance] setTintColor:LUThemeBlueColor];
+    
     return YES;
 }
 
