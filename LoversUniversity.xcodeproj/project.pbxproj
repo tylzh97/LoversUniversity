@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		CF2E1AD3213E539B00870EC7 /* LZHTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2E1AD2213E539B00870EC7 /* LZHTabBarController.m */; };
 		CF669F20213FA50E000155F4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF669F22213FA50E000155F4 /* InfoPlist.strings */; };
+		CF669F26213FA64E000155F4 /* LZHScheduleView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF669F25213FA64E000155F4 /* LZHScheduleView.m */; };
+		CF669F29213FA7EA000155F4 /* LZHUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF669F28213FA7EA000155F4 /* LZHUserView.m */; };
+		CF669F2C213FA853000155F4 /* LZHMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF669F2B213FA853000155F4 /* LZHMessageView.m */; };
 		CF8B6370213E4A1C009B1459 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8B636F213E4A1C009B1459 /* AppDelegate.m */; };
 		CF8B6373213E4A1C009B1459 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8B6372213E4A1C009B1459 /* ViewController.m */; };
 		CF8B6376213E4A1C009B1459 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF8B6374213E4A1C009B1459 /* Main.storyboard */; };
@@ -43,6 +46,12 @@
 		CF669F1D213FA4B8000155F4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		CF669F21213FA50E000155F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CF669F23213FA527000155F4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		CF669F24213FA64E000155F4 /* LZHScheduleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZHScheduleView.h; sourceTree = "<group>"; };
+		CF669F25213FA64E000155F4 /* LZHScheduleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZHScheduleView.m; sourceTree = "<group>"; };
+		CF669F27213FA7EA000155F4 /* LZHUserView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZHUserView.h; sourceTree = "<group>"; };
+		CF669F28213FA7EA000155F4 /* LZHUserView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZHUserView.m; sourceTree = "<group>"; };
+		CF669F2A213FA853000155F4 /* LZHMessageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZHMessageView.h; sourceTree = "<group>"; };
+		CF669F2B213FA853000155F4 /* LZHMessageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZHMessageView.m; sourceTree = "<group>"; };
 		CF8B636B213E4A1B009B1459 /* LoversUniversity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoversUniversity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF8B636E213E4A1B009B1459 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CF8B636F213E4A1C009B1459 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -165,6 +174,12 @@
 		CFDB268C213E9B6300F74B5E /* MyView */ = {
 			isa = PBXGroup;
 			children = (
+				CF669F24213FA64E000155F4 /* LZHScheduleView.h */,
+				CF669F25213FA64E000155F4 /* LZHScheduleView.m */,
+				CF669F27213FA7EA000155F4 /* LZHUserView.h */,
+				CF669F28213FA7EA000155F4 /* LZHUserView.m */,
+				CF669F2A213FA853000155F4 /* LZHMessageView.h */,
+				CF669F2B213FA853000155F4 /* LZHMessageView.m */,
 			);
 			path = MyView;
 			sourceTree = "<group>";
@@ -301,9 +316,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF669F29213FA7EA000155F4 /* LZHUserView.m in Sources */,
 				CF8B6373213E4A1C009B1459 /* ViewController.m in Sources */,
 				CF8B637E213E4A1E009B1459 /* main.m in Sources */,
 				CF2E1AD3213E539B00870EC7 /* LZHTabBarController.m in Sources */,
+				CF669F2C213FA853000155F4 /* LZHMessageView.m in Sources */,
+				CF669F26213FA64E000155F4 /* LZHScheduleView.m in Sources */,
 				CF8B6370213E4A1C009B1459 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

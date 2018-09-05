@@ -16,6 +16,10 @@
 
 @implementation AppDelegate
 
+/**
+ *  仅在此处添加底部导航控制器,所有主视图的内容均在LZHTabBarController文件中添加!
+ */
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.

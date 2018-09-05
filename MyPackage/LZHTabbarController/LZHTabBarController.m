@@ -9,6 +9,10 @@
 #import "LZHTabBarController.h"
 #import "ViewController.h"
 
+#import "LZHScheduleView.h"
+#import "LZHUserView.h"
+#import "LZHMessageView.h"
+
 @interface LZHTabBarController ()
 
 @end
@@ -19,17 +23,19 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self addChildViewController:[self getNewVCWithtitle:@"消息" andImageName:@"message"]];
-    [self addChildViewController:[self getNewVCWithtitle:@"课表" andImageName:@"schedule"]];
-    [self addChildViewController:[self getNewVCWithtitle:@"用户" andImageName:@"user"]];
+    UINavigationController * nav2 = [[UINavigationController alloc] initWithRootViewController:[LZHScheduleView new]];
+    
+    
+    [self addChildViewController:[self getViewController:[LZHMessageView new] withtitle:@"消息" andImageName:@"message"]];
+    [self addChildViewController:[self getViewController:nav2 withtitle:@"课表" andImageName:@"schedule"]];
+    [self addChildViewController:[self getViewController:[LZHUserView new] withtitle:@"用户" andImageName:@"user"]];
 }
 
-- (UIViewController *) getNewVCWithtitle:(NSString *)title andImageName:(NSString *) imgName{
-    UIViewController * nvc = [ViewController new];
-    nvc.title = title;
-    nvc.tabBarItem.image = [self resizeUIImage:[UIImage imageNamed:imgName] withSize:CGSizeMake(30, 30)];
-    nvc.tabBarItem.selectedImage = [[self resizeUIImage:[UIImage imageNamed:[imgName stringByAppendingString:@"_fill"]] withSize:CGSizeMake(30, 30)] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    return nvc;
+- (UIViewController *) getViewController:(UIViewController *) vc withtitle:(NSString *)title andImageName:(NSString *) imgName{
+    vc.title = title;
+    vc.tabBarItem.image = [self resizeUIImage:[UIImage imageNamed:imgName] withSize:CGSizeMake(30, 30)];
+    vc.tabBarItem.selectedImage = [[self resizeUIImage:[UIImage imageNamed:[imgName stringByAppendingString:@"_fill"]] withSize:CGSizeMake(30, 30)] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    return vc;
 }
 
 //重置图像大小的新方法测试
