@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CF2E1AD3213E539B00870EC7 /* LZHTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2E1AD2213E539B00870EC7 /* LZHTabBarController.m */; };
+		CF669F20213FA50E000155F4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF669F22213FA50E000155F4 /* InfoPlist.strings */; };
 		CF8B6370213E4A1C009B1459 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8B636F213E4A1C009B1459 /* AppDelegate.m */; };
 		CF8B6373213E4A1C009B1459 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8B6372213E4A1C009B1459 /* ViewController.m */; };
 		CF8B6376213E4A1C009B1459 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF8B6374213E4A1C009B1459 /* Main.storyboard */; };
@@ -38,6 +39,10 @@
 /* Begin PBXFileReference section */
 		CF2E1AD1213E539B00870EC7 /* LZHTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZHTabBarController.h; sourceTree = "<group>"; };
 		CF2E1AD2213E539B00870EC7 /* LZHTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZHTabBarController.m; sourceTree = "<group>"; };
+		CF669F1C213FA4B8000155F4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		CF669F1D213FA4B8000155F4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		CF669F21213FA50E000155F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CF669F23213FA527000155F4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		CF8B636B213E4A1B009B1459 /* LoversUniversity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoversUniversity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF8B636E213E4A1B009B1459 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CF8B636F213E4A1C009B1459 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -133,6 +138,7 @@
 				CF8B6377213E4A1E009B1459 /* Assets.xcassets */,
 				CF8B6379213E4A1E009B1459 /* LaunchScreen.storyboard */,
 				CF8B637C213E4A1E009B1459 /* Info.plist */,
+				CF669F22213FA50E000155F4 /* InfoPlist.strings */,
 				CF8B637D213E4A1E009B1459 /* main.m */,
 			);
 			path = LoversUniversity;
@@ -248,6 +254,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = CF8B6362213E4A1B009B1459;
 			productRefGroup = CF8B636C213E4A1B009B1459 /* Products */;
@@ -267,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF8B637B213E4A1E009B1459 /* LaunchScreen.storyboard in Resources */,
+				CF669F20213FA50E000155F4 /* InfoPlist.strings in Resources */,
 				CF8B6378213E4A1E009B1459 /* Assets.xcassets in Resources */,
 				CF8B6376213E4A1C009B1459 /* Main.storyboard in Resources */,
 			);
@@ -332,10 +340,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		CF669F22213FA50E000155F4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF669F21213FA50E000155F4 /* en */,
+				CF669F23213FA527000155F4 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		CF8B6374213E4A1C009B1459 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CF8B6375213E4A1C009B1459 /* Base */,
+				CF669F1C213FA4B8000155F4 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -344,6 +362,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				CF8B637A213E4A1E009B1459 /* Base */,
+				CF669F1D213FA4B8000155F4 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -355,6 +374,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -413,6 +433,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
