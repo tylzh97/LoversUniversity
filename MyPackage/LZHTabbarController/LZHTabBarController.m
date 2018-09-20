@@ -26,9 +26,12 @@
     UINavigationController * nav2 = [[UINavigationController alloc] initWithRootViewController:[LZHScheduleView new]];
     
     
-    [self addChildViewController:[self getViewController:[LZHMessageView new] withtitle:@"消息" andImageName:@"message"]];
-    [self addChildViewController:[self getViewController:nav2 withtitle:@"课表" andImageName:@"schedule"]];
-    [self addChildViewController:[self getViewController:[LZHUserView new] withtitle:@"用户" andImageName:@"user"]];
+    [self addChildViewController:[self getViewController:[LZHMessageView new] withtitle:@"悄悄话" andImageName:@"message"]];
+    [self addChildViewController:[self getViewController:nav2 withtitle:@"课程表" andImageName:@"schedule"]];
+    [self addChildViewController:[self getViewController:[LZHUserView new] withtitle:@"我" andImageName:@"user"]];
+    
+    //让软件启动默认在第二页
+    self.selectedIndex = 1;
 }
 
 - (UIViewController *) getViewController:(UIViewController *) vc withtitle:(NSString *)title andImageName:(NSString *) imgName{

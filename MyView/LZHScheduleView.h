@@ -22,4 +22,10 @@
 
 @interface LZHScheduleView : UIViewController
 
+/** 用于判断界面是否进行初始化
+ *  未初始化为 FALSE
+ *  初始化为  TRUE
+ */
+@property (nonatomic) BOOL hasInitlized;
+
 @end

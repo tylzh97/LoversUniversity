@@ -10,6 +10,8 @@
 
 @interface LZHScheduleView ()
 
+@property (nonatomic, strong) UILabel *testLabel;
+
 @end
 
 @implementation LZHScheduleView
@@ -25,23 +27,43 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.navigationItem.title = @"123";
+    // 初始化界面,只会执行一次.
+    [self initlizeView];
     
-    UIButton * myBtn;
-    myBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    myBtn.frame  = CGRectMake(0, 0, 30, 30);
-    [myBtn setCenter:CGPointMake(35, 30)];
-    myBtn.backgroundColor = [UIColor greenColor];
+    UILabel *label = [[UILabel alloc] initWithFrame:self.view.bounds];
+    label.text = @"SafeArea";
+    label.textAlignment = NSTextAlignmentCenter;
+    label.backgroundColor = [UIColor greenColor];
+    [self.view addSubview:label];
+    self.testLabel = label;
+
     
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:myBtn];
+    self.navigationItem.title = NSLocalizedString(@"ScheduleName", nil);
     
-    // Do any additional setup after loading the view.
+}
+
+
+- (void)viewSafeAreaInsetsDidChange {
+    [super viewSafeAreaInsetsDidChange];
+    UIEdgeInsets insets = self.view.safeAreaInsets;
+    self.testLabel.frame = CGRectMake(insets.left, insets.top, self.view.frame.size.width - (insets.right + insets.left), self.view.frame.size.height - (insets.top + insets.bottom));
+}
+
+/**用于初始化界面,该函数只会执行一次.*/
+- (void) initlizeView {
+    if(!self.hasInitlized){
+        self.hasInitlized = TRUE;
+        
+        self.view.backgroundColor = [UIColor whiteColor];
+    }
+    return ;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 /*
 #pragma mark - Navigation

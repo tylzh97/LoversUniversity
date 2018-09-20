@@ -20,6 +20,8 @@
 		CF8B637E213E4A1E009B1459 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8B637D213E4A1E009B1459 /* main.m */; };
 		CF8B6388213E4A1E009B1459 /* LoversUniversityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8B6387213E4A1E009B1459 /* LoversUniversityTests.m */; };
 		CF8B6393213E4A1E009B1459 /* LoversUniversityUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8B6392213E4A1E009B1459 /* LoversUniversityUITests.m */; };
+		CF9FCEED21490C62003DA2F1 /* mindme.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF9FCEEC21490C62003DA2F1 /* mindme.txt */; };
+		CF9FCEF02149139B003DA2F1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF9FCEF22149139B003DA2F1 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,9 @@
 		CF8B638E213E4A1E009B1459 /* LoversUniversityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoversUniversityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF8B6392213E4A1E009B1459 /* LoversUniversityUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoversUniversityUITests.m; sourceTree = "<group>"; };
 		CF8B6394213E4A1F009B1459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF9FCEEC21490C62003DA2F1 /* mindme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mindme.txt; sourceTree = "<group>"; };
+		CF9FCEF12149139B003DA2F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CF9FCEF32149139D003DA2F1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		CFDB2692213EA7E400F74B5E /* LZHMarco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZHMarco.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +121,7 @@
 		CF8B6362213E4A1B009B1459 = {
 			isa = PBXGroup;
 			children = (
+				CF9FCEEC21490C62003DA2F1 /* mindme.txt */,
 				CFDB2692213EA7E400F74B5E /* LZHMarco.h */,
 				CFDB268C213E9B6300F74B5E /* MyView */,
 				CF2E1ACF213E531400870EC7 /* MyPackage */,
@@ -147,6 +153,7 @@
 				CF8B6377213E4A1E009B1459 /* Assets.xcassets */,
 				CF8B6379213E4A1E009B1459 /* LaunchScreen.storyboard */,
 				CF8B637C213E4A1E009B1459 /* Info.plist */,
+				CF9FCEF22149139B003DA2F1 /* Localizable.strings */,
 				CF669F22213FA50E000155F4 /* InfoPlist.strings */,
 				CF8B637D213E4A1E009B1459 /* main.m */,
 			);
@@ -288,6 +295,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF9FCEED21490C62003DA2F1 /* mindme.txt in Resources */,
+				CF9FCEF02149139B003DA2F1 /* Localizable.strings in Resources */,
 				CF8B637B213E4A1E009B1459 /* LaunchScreen.storyboard in Resources */,
 				CF669F20213FA50E000155F4 /* InfoPlist.strings in Resources */,
 				CF8B6378213E4A1E009B1459 /* Assets.xcassets in Resources */,
@@ -383,6 +392,15 @@
 				CF669F1D213FA4B8000155F4 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CF9FCEF22149139B003DA2F1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF9FCEF12149139B003DA2F1 /* en */,
+				CF9FCEF32149139D003DA2F1 /* zh-Hans */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
